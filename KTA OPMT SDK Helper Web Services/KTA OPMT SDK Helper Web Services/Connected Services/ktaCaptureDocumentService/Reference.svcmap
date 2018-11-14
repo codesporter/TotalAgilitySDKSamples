@@ -19,22 +19,22 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="https://kofaxts.demo.totalagility.com/Services/SDK/CaptureDocumentService.svc" Protocol="http" SourceId="1" />
+    <MetadataSource Address="https://kofaxtenant.web.tstest.com/TotalAgility/Services/SDK/CaptureDocumentService.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="CaptureDocumentService.xsd" MetadataType="Schema" ID="aa01aa8c-e19b-4f4e-a864-de8427706688" SourceId="1" SourceUrl="https://kofaxts.demo.totalagility.com/Services/SDK/CaptureDocumentService.svc?xsd=xsd6" />
-    <MetadataFile FileName="CaptureDocumentService.disco" MetadataType="Disco" ID="1a94a049-ce33-4bf2-a872-ecb04386864f" SourceId="1" SourceUrl="https://kofaxts.demo.totalagility.com/Services/SDK/CaptureDocumentService.svc?disco" />
-    <MetadataFile FileName="CaptureDocumentService1.xsd" MetadataType="Schema" ID="2924b167-3b91-4f30-8437-ec44098cf39c" SourceId="1" SourceUrl="https://kofaxts.demo.totalagility.com/Services/SDK/CaptureDocumentService.svc?xsd=xsd3" />
-    <MetadataFile FileName="CaptureDocumentService2.xsd" MetadataType="Schema" ID="502e3d3e-22e7-4508-afa7-dea05e4ceef4" SourceId="1" SourceUrl="https://kofaxts.demo.totalagility.com/Services/SDK/CaptureDocumentService.svc?xsd=xsd7" />
-    <MetadataFile FileName="CaptureDocumentService.wsdl" MetadataType="Wsdl" ID="49f2563e-11c0-4bbb-aa06-6194fe2fec6c" SourceId="1" SourceUrl="https://kofaxts.demo.totalagility.com/Services/SDK/CaptureDocumentService.svc?wsdl" />
-    <MetadataFile FileName="CaptureDocumentService3.xsd" MetadataType="Schema" ID="58d15c13-8c99-405e-880c-840fcaf8a9b6" SourceId="1" SourceUrl="https://kofaxts.demo.totalagility.com/Services/SDK/CaptureDocumentService.svc?xsd=xsd2" />
-    <MetadataFile FileName="CaptureDocumentService1.wsdl" MetadataType="Wsdl" ID="4caf0423-ecc0-4ee0-a90b-52952bf916bc" SourceId="1" SourceUrl="https://kofaxts.demo.totalagility.com/Services/SDK/CaptureDocumentService.svc?wsdl=wsdl0" />
-    <MetadataFile FileName="CaptureDocumentService4.xsd" MetadataType="Schema" ID="6a3ca54e-0c0a-4df6-9e83-0e6c45795eed" SourceId="1" SourceUrl="https://kofaxts.demo.totalagility.com/Services/SDK/CaptureDocumentService.svc?xsd=xsd1" />
-    <MetadataFile FileName="CaptureDocumentService5.xsd" MetadataType="Schema" ID="e50930a7-ff5d-4ead-bf38-c05167868dd6" SourceId="1" SourceUrl="https://kofaxts.demo.totalagility.com/Services/SDK/CaptureDocumentService.svc?xsd=xsd5" />
-    <MetadataFile FileName="CaptureDocumentService6.xsd" MetadataType="Schema" ID="56673b29-b3f7-4967-a84f-e0ed8c2e224b" SourceId="1" SourceUrl="https://kofaxts.demo.totalagility.com/Services/SDK/CaptureDocumentService.svc?xsd=xsd9" />
-    <MetadataFile FileName="CaptureDocumentService7.xsd" MetadataType="Schema" ID="acffb3a6-b202-4724-a03b-4c142d0c7cda" SourceId="1" SourceUrl="https://kofaxts.demo.totalagility.com/Services/SDK/CaptureDocumentService.svc?xsd=xsd0" />
-    <MetadataFile FileName="CaptureDocumentService8.xsd" MetadataType="Schema" ID="fd82e8a6-07ba-4fc5-aed1-b6a82228ba7e" SourceId="1" SourceUrl="https://kofaxts.demo.totalagility.com/Services/SDK/CaptureDocumentService.svc?xsd=xsd4" />
-    <MetadataFile FileName="CaptureDocumentService9.xsd" MetadataType="Schema" ID="28308d62-4c59-4ce3-ae30-aae1d3edd1c5" SourceId="1" SourceUrl="https://kofaxts.demo.totalagility.com/Services/SDK/CaptureDocumentService.svc?xsd=xsd8" />
+    <MetadataFile FileName="CaptureDocumentService10.xsd" MetadataType="Schema" ID="612b5703-bdd0-44a9-9257-da825f3fd3c4" SourceId="1" SourceUrl="https://kofaxtenant.web.tstest.com/TotalAgility/Services/SDK/CaptureDocumentService.svc?xsd=xsd5" />
+    <MetadataFile FileName="CaptureDocumentService101.xsd" MetadataType="Schema" ID="f0da82a5-0c22-4d2f-9581-40f0c48382e1" SourceId="1" SourceUrl="https://kofaxtenant.web.tstest.com/TotalAgility/Services/SDK/CaptureDocumentService.svc?xsd=xsd9" />
+    <MetadataFile FileName="CaptureDocumentService2.wsdl" MetadataType="Wsdl" ID="cb6b4db1-bc38-4d50-89cc-ea495d8f1cbb" SourceId="1" SourceUrl="https://kofaxtenant.web.tstest.com/TotalAgility/Services/SDK/CaptureDocumentService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="CaptureDocumentService102.xsd" MetadataType="Schema" ID="583c93f3-cfaf-4334-a83a-983f4b690ea6" SourceId="1" SourceUrl="https://kofaxtenant.web.tstest.com/TotalAgility/Services/SDK/CaptureDocumentService.svc?xsd=xsd3" />
+    <MetadataFile FileName="CaptureDocumentService103.xsd" MetadataType="Schema" ID="33e33d2a-e57a-4197-8391-471dc01ce9d8" SourceId="1" SourceUrl="https://kofaxtenant.web.tstest.com/TotalAgility/Services/SDK/CaptureDocumentService.svc?xsd=xsd0" />
+    <MetadataFile FileName="CaptureDocumentService104.xsd" MetadataType="Schema" ID="5482b4e1-4418-46ee-9775-a0939e2bf35d" SourceId="1" SourceUrl="https://kofaxtenant.web.tstest.com/TotalAgility/Services/SDK/CaptureDocumentService.svc?xsd=xsd6" />
+    <MetadataFile FileName="CaptureDocumentService1.disco" MetadataType="Disco" ID="66887f36-7ee2-41ce-8dcf-ce546bc32a6c" SourceId="1" SourceUrl="https://kofaxtenant.web.tstest.com/TotalAgility/Services/SDK/CaptureDocumentService.svc?disco" />
+    <MetadataFile FileName="CaptureDocumentService105.xsd" MetadataType="Schema" ID="ec761534-d847-49a6-92db-6cda12644d3d" SourceId="1" SourceUrl="https://kofaxtenant.web.tstest.com/TotalAgility/Services/SDK/CaptureDocumentService.svc?xsd=xsd4" />
+    <MetadataFile FileName="CaptureDocumentService106.xsd" MetadataType="Schema" ID="3c392171-bb60-42f3-b344-e4c943d60f73" SourceId="1" SourceUrl="https://kofaxtenant.web.tstest.com/TotalAgility/Services/SDK/CaptureDocumentService.svc?xsd=xsd8" />
+    <MetadataFile FileName="CaptureDocumentService107.xsd" MetadataType="Schema" ID="2c3b464c-10c7-4219-971d-e001d08f212a" SourceId="1" SourceUrl="https://kofaxtenant.web.tstest.com/TotalAgility/Services/SDK/CaptureDocumentService.svc?xsd=xsd1" />
+    <MetadataFile FileName="CaptureDocumentService21.wsdl" MetadataType="Wsdl" ID="d7f3d707-36ea-41b3-b0bc-210f06073594" SourceId="1" SourceUrl="https://kofaxtenant.web.tstest.com/TotalAgility/Services/SDK/CaptureDocumentService.svc?wsdl" />
+    <MetadataFile FileName="CaptureDocumentService108.xsd" MetadataType="Schema" ID="97e1de91-6101-478b-bd14-af9d653a75ca" SourceId="1" SourceUrl="https://kofaxtenant.web.tstest.com/TotalAgility/Services/SDK/CaptureDocumentService.svc?xsd=xsd2" />
+    <MetadataFile FileName="CaptureDocumentService109.xsd" MetadataType="Schema" ID="cc1d4ee2-458a-4b88-9667-e5b86cd9b76a" SourceId="1" SourceUrl="https://kofaxtenant.web.tstest.com/TotalAgility/Services/SDK/CaptureDocumentService.svc?xsd=xsd7" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

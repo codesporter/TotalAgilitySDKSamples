@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="3Cd+CrqysX/wixYbbQ4vUg6ot7M=">
+<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="CR3z7N1AseWOyKP4xA8YWE6GAP8=">
   <bindingConfigurations>
     <bindingConfiguration bindingType="basicHttpBinding" name="BasicHttpBinding_ICaptureDocumentService">
       <properties>
@@ -112,10 +112,10 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="BasicHttpBinding_ICaptureDocumentService" contract="ktaCaptureDocumentService.ICaptureDocumentService" bindingType="basicHttpBinding" address="https://kofaxts.demo.totalagility.com/Services/SDK/CaptureDocumentService.svc" bindingConfiguration="BasicHttpBinding_ICaptureDocumentService">
+    <endpoint name="BasicHttpBinding_ICaptureDocumentService" contract="ktaCaptureDocumentService.ICaptureDocumentService" bindingType="basicHttpBinding" address="https://kofaxtenant.web.tstest.com/TotalAgility/Services/SDK/CaptureDocumentService.svc" bindingConfiguration="BasicHttpBinding_ICaptureDocumentService">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>https://kofaxts.demo.totalagility.com/Services/SDK/CaptureDocumentService.svc</serializedValue>
+          <serializedValue>https://kofaxtenant.web.tstest.com/TotalAgility/Services/SDK/CaptureDocumentService.svc</serializedValue>
         </property>
         <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />

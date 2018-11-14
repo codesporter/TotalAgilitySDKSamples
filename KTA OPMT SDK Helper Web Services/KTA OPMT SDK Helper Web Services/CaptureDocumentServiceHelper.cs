@@ -5,10 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.ServiceModel;
 using KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService;
+using System.Net;
 
-namespace CaptureDocumentServiceHelper
+namespace ktaCaptureDocumentServiceHelper
 {
-    public class CaptureDocumentServiceHelper
+    public class CaptureDocument_ServiceHelper
     {
         //Merge all documents in a folder
         public void MergeFolder(string serverlocation, string sessionID, string folderID)
@@ -23,6 +24,8 @@ namespace CaptureDocumentServiceHelper
 
             EndpointAddress endpointAddress = new EndpointAddress("https://" + serverlocation + "/TotalAgility/Services/Sdk/CaptureDocumentService.svc");
             CaptureDocumentServiceClient client = new CaptureDocumentServiceClient(binding, endpointAddress);
+
+            ServicePointManager.ServerCertificateValidationCallback = delegate { return true; };
 
             //Get Source Document
             Folder folder = client.GetFolder(sessionID, new ReportingData(), folderID);
