@@ -40,7 +40,6 @@ namespace CaptureDocumentServiceHelper
                 documents.Add(doc.Id);
             }
 
-
             //Merge docs
             client.MergeDocuments(sessionID, documents);
 
