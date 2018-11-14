@@ -1,4 +1,4 @@
-# KTA OPMT SDK Helper Web Services
+# KTA OPMT SDK Helper Web Services - ONLY KTA 7.5 or above!
 
 TotalAgility OPMT SDK Helper connected through Web Services
 
