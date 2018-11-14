@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E6A450CC-C326-4A37-AD24-11D622DACC46}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KTA_OPMT_SDK_Helper_Web_Services</RootNamespace>
+    <AssemblyName>KTA OPMT SDK Helper Web Services</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CaptureDocumentServiceHelper.cs" />
+    <Compile Include="Connected Services\ktaCaptureDocumentService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Connected Services\ktaCaptureDocumentService\CaptureDocumentService.wsdl" />
+    <None Include="Connected Services\ktaCaptureDocumentService\CaptureDocumentService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ktaCaptureDocumentService\CaptureDocumentService1.wsdl" />
+    <None Include="Connected Services\ktaCaptureDocumentService\CaptureDocumentService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ktaCaptureDocumentService\CaptureDocumentService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ktaCaptureDocumentService\CaptureDocumentService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ktaCaptureDocumentService\CaptureDocumentService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ktaCaptureDocumentService\CaptureDocumentService5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ktaCaptureDocumentService\CaptureDocumentService6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ktaCaptureDocumentService\CaptureDocumentService7.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ktaCaptureDocumentService\CaptureDocumentService8.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ktaCaptureDocumentService\CaptureDocumentService9.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ktaCaptureDocumentService\KTA_OPMT_SDK_Helper_Web_Services.CaptureDocumentService.svc.AnnotationDataCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ktaCaptureDocumentService\KTA_OPMT_SDK_Helper_Web_Services.CaptureDocumentService.svc.BinaryData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ktaCaptureDocumentService\KTA_OPMT_SDK_Helper_Web_Services.CaptureDocumentService.svc.DeletionResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ktaCaptureDocumentService\KTA_OPMT_SDK_Helper_Web_Services.CaptureDocumentService.svc.Document.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ktaCaptureDocumentService\KTA_OPMT_SDK_Helper_Web_Services.CaptureDocumentService.svc.DocumentFieldValue.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ktaCaptureDocumentService\KTA_OPMT_SDK_Helper_Web_Services.CaptureDocumentService.svc.DocumentFieldValueCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ktaCaptureDocumentService\KTA_OPMT_SDK_Helper_Web_Services.CaptureDocumentService.svc.DocumentIdentity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ktaCaptureDocumentService\KTA_OPMT_SDK_Helper_Web_Services.CaptureDocumentService.svc.DocumentIdentityCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ktaCaptureDocumentService\KTA_OPMT_SDK_Helper_Web_Services.CaptureDocumentService.svc.DocumentImage.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ktaCaptureDocumentService\KTA_OPMT_SDK_Helper_Web_Services.CaptureDocumentService.svc.DocumentSortResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ktaCaptureDocumentService\KTA_OPMT_SDK_Helper_Web_Services.CaptureDocumentService.svc.DocumentSourceFile.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ktaCaptureDocumentService\KTA_OPMT_SDK_Helper_Web_Services.CaptureDocumentService.svc.FieldAlternative2Collection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ktaCaptureDocumentService\KTA_OPMT_SDK_Helper_Web_Services.CaptureDocumentService.svc.FieldAlternativeCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ktaCaptureDocumentService\KTA_OPMT_SDK_Helper_Web_Services.CaptureDocumentService.svc.FieldAlternatives2Collection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ktaCaptureDocumentService\KTA_OPMT_SDK_Helper_Web_Services.CaptureDocumentService.svc.FieldAlternativesCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ktaCaptureDocumentService\KTA_OPMT_SDK_Helper_Web_Services.CaptureDocumentService.svc.FieldPropertiesCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ktaCaptureDocumentService\KTA_OPMT_SDK_Helper_Web_Services.CaptureDocumentService.svc.Folder.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ktaCaptureDocumentService\KTA_OPMT_SDK_Helper_Web_Services.CaptureDocumentService.svc.FolderFieldValue.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ktaCaptureDocumentService\KTA_OPMT_SDK_Helper_Web_Services.CaptureDocumentService.svc.FolderFieldValueCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ktaCaptureDocumentService\KTA_OPMT_SDK_Helper_Web_Services.CaptureDocumentService.svc.FormattingResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ktaCaptureDocumentService\KTA_OPMT_SDK_Helper_Web_Services.CaptureDocumentService.svc.ImageSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ktaCaptureDocumentService\KTA_OPMT_SDK_Helper_Web_Services.CaptureDocumentService.svc.LockedItemCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ktaCaptureDocumentService\KTA_OPMT_SDK_Helper_Web_Services.CaptureDocumentService.svc.PageImageData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ktaCaptureDocumentService\KTA_OPMT_SDK_Helper_Web_Services.CaptureDocumentService.svc.PagePropertiesCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ktaCaptureDocumentService\KTA_OPMT_SDK_Helper_Web_Services.CaptureDocumentService.svc.PageSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ktaCaptureDocumentService\KTA_OPMT_SDK_Helper_Web_Services.CaptureDocumentService.svc.RejectedPages.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ktaCaptureDocumentService\KTA_OPMT_SDK_Helper_Web_Services.CaptureDocumentService.svc.ReviewValidationResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ktaCaptureDocumentService\KTA_OPMT_SDK_Helper_Web_Services.CaptureDocumentService.svc.RuntimeField2Collection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ktaCaptureDocumentService\KTA_OPMT_SDK_Helper_Web_Services.CaptureDocumentService.svc.SearchResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ktaCaptureDocumentService\KTA_OPMT_SDK_Helper_Web_Services.CaptureDocumentService.svc.ValidationExecutionContext.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ktaCaptureDocumentService\KTA_OPMT_SDK_Helper_Web_Services.CaptureDocumentService.svc.ValidationResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ktaCaptureDocumentService\KTA_OPMT_SDK_Helper_Web_Services.CaptureDocumentService.svc.ValidationResultCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ktaCaptureDocumentService\KTA_OPMT_SDK_Helper_Web_Services.CaptureDocumentService.svc.WordCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Properties\DataSources\System.Data.DataSet.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\ktaCaptureDocumentService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ktaCaptureDocumentService\CaptureDocumentService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ktaCaptureDocumentService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ktaCaptureDocumentService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ktaCaptureDocumentService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
