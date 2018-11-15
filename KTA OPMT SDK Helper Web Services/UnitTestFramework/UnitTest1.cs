@@ -11,8 +11,8 @@ namespace UnitTestFramework
     public class UnitTest1
     {
 
-        string serverNameOrIP = "kofaxtenant.web.tstest.com";
-        string url = "https://kofaxtenant.web.tstest.com/TotalAgility/Services/Sdk/CaptureDocumentService.svc";
+        string serverNameOrIP = "w2012-ts3.tstest.com";
+        string url = "https://w2012-ts3.tstest.com/TotalAgility/Services/Sdk/CaptureDocumentService.svc";
         string folderID = "d980ec59-7510-4d43-92e2-a99801163ce7";
         string sessionID = "A70A387DD519B34BB0E354124553E139";
 

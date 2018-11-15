@@ -872,15 +872,10 @@ namespace KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="BusinessRuleValidatorInput", Namespace="http://www.kofax.com/agility/services/sdk")]
     [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.ServiceModel.ExceptionDetail))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Point[]))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Point))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Size))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PointF))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.SizeF))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Color))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.CustomExceptionDetail))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.AnnotationLineCapStyle))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.ServiceModel.ExceptionDetail))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ClassificationResultCollection))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ClassificationResult))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.CaptureAnnotationCollection))]
@@ -1058,10 +1053,15 @@ namespace KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService {
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PagePropertiesCollection))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PageProperties))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ValidationExecutionContext))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Size))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PointF))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.SizeF))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Color))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(string[]))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(object[][]))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(object[]))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(byte[][]))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.CustomExceptionDetail))]
     public partial class BusinessRuleValidatorInput : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
@@ -1198,520 +1198,6 @@ namespace KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService {
         public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
         
         void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Size", Namespace="http://schemas.datacontract.org/2004/07/System.Drawing")]
-    [System.SerializableAttribute()]
-    public partial struct Size : System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        private int heightField;
-        
-        private int widthField;
-        
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public int height {
-            get {
-                return this.heightField;
-            }
-            set {
-                if ((this.heightField.Equals(value) != true)) {
-                    this.heightField = value;
-                    this.RaisePropertyChanged("height");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public int width {
-            get {
-                return this.widthField;
-            }
-            set {
-                if ((this.widthField.Equals(value) != true)) {
-                    this.widthField = value;
-                    this.RaisePropertyChanged("width");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="PointF", Namespace="http://schemas.datacontract.org/2004/07/System.Drawing")]
-    [System.SerializableAttribute()]
-    public partial struct PointF : System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        private float xField;
-        
-        private float yField;
-        
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public float x {
-            get {
-                return this.xField;
-            }
-            set {
-                if ((this.xField.Equals(value) != true)) {
-                    this.xField = value;
-                    this.RaisePropertyChanged("x");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public float y {
-            get {
-                return this.yField;
-            }
-            set {
-                if ((this.yField.Equals(value) != true)) {
-                    this.yField = value;
-                    this.RaisePropertyChanged("y");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="SizeF", Namespace="http://schemas.datacontract.org/2004/07/System.Drawing")]
-    [System.SerializableAttribute()]
-    public partial struct SizeF : System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        private float heightField;
-        
-        private float widthField;
-        
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public float height {
-            get {
-                return this.heightField;
-            }
-            set {
-                if ((this.heightField.Equals(value) != true)) {
-                    this.heightField = value;
-                    this.RaisePropertyChanged("height");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public float width {
-            get {
-                return this.widthField;
-            }
-            set {
-                if ((this.widthField.Equals(value) != true)) {
-                    this.widthField = value;
-                    this.RaisePropertyChanged("width");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Color", Namespace="http://schemas.datacontract.org/2004/07/System.Drawing")]
-    [System.SerializableAttribute()]
-    public partial struct Color : System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        private short knownColorField;
-        
-        private string nameField;
-        
-        private short stateField;
-        
-        private long valueField;
-        
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public short knownColor {
-            get {
-                return this.knownColorField;
-            }
-            set {
-                if ((this.knownColorField.Equals(value) != true)) {
-                    this.knownColorField = value;
-                    this.RaisePropertyChanged("knownColor");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public string name {
-            get {
-                return this.nameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.nameField, value) != true)) {
-                    this.nameField = value;
-                    this.RaisePropertyChanged("name");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public short state {
-            get {
-                return this.stateField;
-            }
-            set {
-                if ((this.stateField.Equals(value) != true)) {
-                    this.stateField = value;
-                    this.RaisePropertyChanged("state");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public long value {
-            get {
-                return this.valueField;
-            }
-            set {
-                if ((this.valueField.Equals(value) != true)) {
-                    this.valueField = value;
-                    this.RaisePropertyChanged("value");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="CustomExceptionDetail", Namespace="http://schemas.datacontract.org/2004/07/Agility.Server.Integration.Common.ErrorHa" +
-        "ndling")]
-    [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.ServiceModel.ExceptionDetail))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Point[]))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Point))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Size))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PointF))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.SizeF))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Color))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.AnnotationLineCapStyle))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ClassificationResultCollection))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ClassificationResult))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.CaptureAnnotationCollection))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.CaptureAnnotation))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.BarcodeCollection))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Barcode))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.RuntimeTableColumnCollection))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.RuntimeTableColumn))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PageRectangleCollection))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PageRectangle))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.TextLineCollection))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.TextLine))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.WordCollection))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Word))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FieldAlternativeCollection))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FieldAlternative))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.RuntimeTableRowCollection))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.RuntimeTableRow))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.RuntimeTableCellCollection))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.RuntimeTableCell))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.RuntimeFieldDataCollection))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.RuntimeFieldData))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.RuntimeField))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.RuntimeTableField))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PageCollection))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Page))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.StringCollection))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Validator))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ValidatorIdentity))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FolderValidator))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FolderStandardValidator))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.DocumentTypeIdentity))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.BusinessRuleFolderValidator))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.BusinessRuleIdentity))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.BusinessRuleValidatorInputCollection))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.BusinessRuleValidatorInput))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.CaptureField))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FieldIdentity))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ValidatorIdentityCollection))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FormatterIdentity))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.VerificationSettings))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.BusinessRuleFormatterInputCollection))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.BusinessRuleFormatterInput))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.LookupItemCollection))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.LookupItem))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.LookupIdentity))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.SimpleField))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.TableField))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.CaptureFieldCollection))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.RegularExpressionValidator))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FieldValidator))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.StandardValidator))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.BusinessRuleFieldValidator))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.DateValidator))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.BusinessRuleDocumentValidator))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.DocumentValidator))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FieldRegularExpressionCollection))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FieldRegularExpression))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.RegularExpression2))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.RegularExpressionIdentity))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ValidationResult))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ReportingData))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.RuntimeFieldIdentityCollection))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.RuntimeFieldIdentity))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.DocumentFieldValueCollection))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.DocumentFieldValue))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FolderFieldValueCollection))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FolderFieldValue))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Folder))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.RuntimeFieldContainer))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.DocumentCollection))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Document))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.DocumentTypeSummary))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ClassificationGroupIdentity))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.VariantIdentity))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FolderCollection))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FolderTypeIdentity))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.RuntimeFieldCollection))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.DeletionResult))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.DocumentImage))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PageIndexCollection))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PageIndex))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.WordUpdateCollection))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.WordUpdate))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.DocumentIdentity))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FieldPropertiesCollection))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FieldProperties))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FieldSystemPropertyCollection))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FieldSystemProperty))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FieldSystemPropertyIdentity))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.DocumentDataInputCollection))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.DocumentDataInput))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PageDataCollection))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PageData))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PageImageDataCollection))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PageImageData))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.DocumentIdentityCollection))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.DocumentDataInput2Collection))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.DocumentDataInput2))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.DocumentSourceFile))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.CategoryIdentity))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.RowIndexCollection))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.RowIndex))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PageData2Collection))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PageData2))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FieldFormatter))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Formatter))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.BusinessRuleFormatter))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.DateFormatter))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.AmountFormatter))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PercentageFormatter))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ResourceIdentity))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FormattingResult))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.BusinessRuleInputCollection))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.BusinessRuleInput))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ReviewValidationResult))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.RuntimeFieldValue))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.RuntimeFieldValueCollection))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ValidationResultCollection))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FuzzyDatabaseIdentity))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.SearchQuery))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FuzzySearchFilterCollection))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FuzzySearch))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.SearchResult))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FuzzyDatabaseFieldMappingCollection))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FuzzyDatabaseFieldMapping))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FuzzyDatabaseField))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FuzzyRecordItemCollection))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FuzzyRecordItem))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.DocumentSortResult))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.DocumentSummaryCollection))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.DocumentSummary))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FieldAlternative2Collection))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FieldAlternative2))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FieldIdentityCollection))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FieldAlternativesCollection))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FieldAlternatives))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FieldAlternatives2Collection))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FieldAlternatives2))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.TableFieldIdentity))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.JobIdentity))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.LockedItemCollection))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.LockedItem))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.LockedItemIdentity))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.SplitDocumentInfoCollection))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.SplitDocumentInfo))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.RejectedPages))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.RuntimeField2Collection))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.RuntimeField2))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FieldSystemProperties))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.RuntimeTableCell2Collection))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.RuntimeTableCell2))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.DocumentSystemProperties))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FieldValidationResult2Collection))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FieldValidationResult2))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.TableCellValidationResultCollection))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.TableCellValidationResult))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ImageSummary))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PageSummary))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FieldPropertiesIdentityCollection))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FieldPropertiesIdentity))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FieldSystemPropertyIdentityCollection))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.AnnotationDataCollection))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.AnnotationData))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.LineAnnotationData))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.AnnotationPen))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.AnnotationLineCap))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.RedactionAnnotationData))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.HighlightAnnotationData))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FreehandAnnotationData))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.TextAnnotationData))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.AnnotationFont))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.BinaryData))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PagePropertiesIdentityCollection))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PagePropertiesIdentity))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PagePropertiesCollection))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PageProperties))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ValidationExecutionContext))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(string[]))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(object[][]))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(object[]))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(byte[][]))]
-    public partial class CustomExceptionDetail : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private object CustomDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.ServiceModel.ExceptionDetail ExceptionDetailField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public object CustomData {
-            get {
-                return this.CustomDataField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.CustomDataField, value) != true)) {
-                    this.CustomDataField = value;
-                    this.RaisePropertyChanged("CustomData");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.ServiceModel.ExceptionDetail ExceptionDetail {
-            get {
-                return this.ExceptionDetailField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.ExceptionDetailField, value) != true)) {
-                    this.ExceptionDetailField = value;
-                    this.RaisePropertyChanged("ExceptionDetail");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
             System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
             if ((propertyChanged != null)) {
                 propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
@@ -3290,15 +2776,10 @@ namespace KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService {
     [System.Runtime.Serialization.DataContractAttribute(Name="RuntimeField", Namespace="http://www.kofax.com/agility/services/sdk")]
     [System.SerializableAttribute()]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.RuntimeFieldData))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.ServiceModel.ExceptionDetail))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Point[]))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Point))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Size))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PointF))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.SizeF))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Color))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.CustomExceptionDetail))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.AnnotationLineCapStyle))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.ServiceModel.ExceptionDetail))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ClassificationResultCollection))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ClassificationResult))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.CaptureAnnotationCollection))]
@@ -3475,10 +2956,15 @@ namespace KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService {
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PagePropertiesCollection))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PageProperties))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ValidationExecutionContext))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Size))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PointF))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.SizeF))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Color))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(string[]))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(object[][]))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(object[]))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(byte[][]))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.CustomExceptionDetail))]
     public partial class RuntimeField : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
@@ -4510,15 +3996,10 @@ namespace KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="BusinessRuleFormatterInput", Namespace="http://www.kofax.com/agility/services/sdk")]
     [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.ServiceModel.ExceptionDetail))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Point[]))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Point))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Size))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PointF))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.SizeF))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Color))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.CustomExceptionDetail))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.AnnotationLineCapStyle))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.ServiceModel.ExceptionDetail))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ClassificationResultCollection))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ClassificationResult))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.CaptureAnnotationCollection))]
@@ -4696,10 +4177,15 @@ namespace KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService {
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PagePropertiesCollection))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PageProperties))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ValidationExecutionContext))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Size))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PointF))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.SizeF))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Color))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(string[]))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(object[][]))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(object[]))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(byte[][]))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.CustomExceptionDetail))]
     public partial class BusinessRuleFormatterInput : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
@@ -4796,15 +4282,10 @@ namespace KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="LookupItem", Namespace="http://www.kofax.com/agility/services/sdk")]
     [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.ServiceModel.ExceptionDetail))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Point[]))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Point))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Size))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PointF))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.SizeF))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Color))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.CustomExceptionDetail))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.AnnotationLineCapStyle))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.ServiceModel.ExceptionDetail))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ClassificationResultCollection))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ClassificationResult))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.CaptureAnnotationCollection))]
@@ -4982,10 +4463,15 @@ namespace KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService {
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PagePropertiesCollection))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PageProperties))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ValidationExecutionContext))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Size))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PointF))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.SizeF))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Color))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(string[]))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(object[][]))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(object[]))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(byte[][]))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.CustomExceptionDetail))]
     public partial class LookupItem : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
@@ -5164,15 +4650,10 @@ namespace KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="SimpleField", Namespace="http://www.kofax.com/agility/services/sdk")]
     [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.ServiceModel.ExceptionDetail))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Point[]))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Point))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Size))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PointF))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.SizeF))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Color))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.CustomExceptionDetail))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.AnnotationLineCapStyle))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.ServiceModel.ExceptionDetail))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ClassificationResultCollection))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ClassificationResult))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.CaptureAnnotationCollection))]
@@ -5350,10 +4831,15 @@ namespace KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService {
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PagePropertiesCollection))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PageProperties))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ValidationExecutionContext))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Size))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PointF))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.SizeF))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Color))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(string[]))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(object[][]))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(object[]))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(byte[][]))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.CustomExceptionDetail))]
     public partial class SimpleField : KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.CaptureField {
         
         private object DefaultValueField;
@@ -5915,15 +5401,10 @@ namespace KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="DocumentFieldValue", Namespace="http://www.kofax.com/agility/services/sdk")]
     [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.ServiceModel.ExceptionDetail))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Point[]))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Point))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Size))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PointF))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.SizeF))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Color))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.CustomExceptionDetail))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.AnnotationLineCapStyle))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.ServiceModel.ExceptionDetail))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ClassificationResultCollection))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ClassificationResult))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.CaptureAnnotationCollection))]
@@ -6101,10 +5582,15 @@ namespace KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService {
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PagePropertiesCollection))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PageProperties))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ValidationExecutionContext))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Size))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PointF))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.SizeF))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Color))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(string[]))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(object[][]))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(object[]))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(byte[][]))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.CustomExceptionDetail))]
     public partial class DocumentFieldValue : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
@@ -6156,15 +5642,10 @@ namespace KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="FolderFieldValue", Namespace="http://www.kofax.com/agility/services/sdk")]
     [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.ServiceModel.ExceptionDetail))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Point[]))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Point))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Size))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PointF))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.SizeF))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Color))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.CustomExceptionDetail))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.AnnotationLineCapStyle))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.ServiceModel.ExceptionDetail))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ClassificationResultCollection))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ClassificationResult))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.CaptureAnnotationCollection))]
@@ -6342,10 +5823,15 @@ namespace KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService {
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PagePropertiesCollection))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PageProperties))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ValidationExecutionContext))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Size))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PointF))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.SizeF))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Color))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(string[]))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(object[][]))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(object[]))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(byte[][]))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.CustomExceptionDetail))]
     public partial class FolderFieldValue : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
@@ -7560,15 +7046,10 @@ namespace KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="FieldSystemProperty", Namespace="http://www.kofax.com/agility/services/sdk")]
     [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.ServiceModel.ExceptionDetail))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Point[]))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Point))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Size))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PointF))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.SizeF))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Color))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.CustomExceptionDetail))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.AnnotationLineCapStyle))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.ServiceModel.ExceptionDetail))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ClassificationResultCollection))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ClassificationResult))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.CaptureAnnotationCollection))]
@@ -7746,10 +7227,15 @@ namespace KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService {
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PagePropertiesCollection))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PageProperties))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ValidationExecutionContext))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Size))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PointF))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.SizeF))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Color))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(string[]))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(object[][]))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(object[]))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(byte[][]))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.CustomExceptionDetail))]
     public partial class FieldSystemProperty : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
@@ -9312,15 +8798,10 @@ namespace KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="FormattingResult", Namespace="http://www.kofax.com/agility/services/sdk")]
     [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.ServiceModel.ExceptionDetail))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Point[]))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Point))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Size))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PointF))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.SizeF))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Color))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.CustomExceptionDetail))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.AnnotationLineCapStyle))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.ServiceModel.ExceptionDetail))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ClassificationResultCollection))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ClassificationResult))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.CaptureAnnotationCollection))]
@@ -9498,10 +8979,15 @@ namespace KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService {
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PagePropertiesCollection))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PageProperties))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ValidationExecutionContext))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Size))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PointF))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.SizeF))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Color))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(string[]))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(object[][]))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(object[]))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(byte[][]))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.CustomExceptionDetail))]
     public partial class FormattingResult : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
@@ -9598,15 +9084,10 @@ namespace KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="BusinessRuleInput", Namespace="http://www.kofax.com/agility/services/sdk")]
     [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.ServiceModel.ExceptionDetail))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Point[]))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Point))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Size))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PointF))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.SizeF))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Color))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.CustomExceptionDetail))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.AnnotationLineCapStyle))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.ServiceModel.ExceptionDetail))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ClassificationResultCollection))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ClassificationResult))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.CaptureAnnotationCollection))]
@@ -9784,10 +9265,15 @@ namespace KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService {
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PagePropertiesCollection))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PageProperties))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ValidationExecutionContext))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Size))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PointF))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.SizeF))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Color))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(string[]))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(object[][]))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(object[]))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(byte[][]))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.CustomExceptionDetail))]
     public partial class BusinessRuleInput : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
@@ -10538,15 +10024,10 @@ namespace KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="DocumentSummary", Namespace="http://www.kofax.com/agility/services/sdk")]
     [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.ServiceModel.ExceptionDetail))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Point[]))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Point))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Size))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PointF))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.SizeF))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Color))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.CustomExceptionDetail))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.AnnotationLineCapStyle))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.ServiceModel.ExceptionDetail))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ClassificationResultCollection))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ClassificationResult))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.CaptureAnnotationCollection))]
@@ -10724,10 +10205,15 @@ namespace KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService {
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PagePropertiesCollection))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PageProperties))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ValidationExecutionContext))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Size))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PointF))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.SizeF))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Color))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(string[]))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(object[][]))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(object[]))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(byte[][]))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.CustomExceptionDetail))]
     public partial class DocumentSummary : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
@@ -11540,15 +11026,10 @@ namespace KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="RuntimeField2", Namespace="http://www.kofax.com/agility/services/sdk")]
     [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.ServiceModel.ExceptionDetail))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Point[]))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Point))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Size))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PointF))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.SizeF))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Color))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.CustomExceptionDetail))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.AnnotationLineCapStyle))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.ServiceModel.ExceptionDetail))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ClassificationResultCollection))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ClassificationResult))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.CaptureAnnotationCollection))]
@@ -11726,10 +11207,15 @@ namespace KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService {
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PagePropertiesCollection))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PageProperties))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ValidationExecutionContext))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Size))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PointF))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.SizeF))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Color))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(string[]))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(object[][]))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(object[]))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(byte[][]))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.CustomExceptionDetail))]
     public partial class RuntimeField2 : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
@@ -12071,15 +11557,10 @@ namespace KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="RuntimeTableCell2", Namespace="http://www.kofax.com/agility/services/sdk")]
     [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.ServiceModel.ExceptionDetail))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Point[]))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Point))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Size))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PointF))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.SizeF))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Color))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.CustomExceptionDetail))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.AnnotationLineCapStyle))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.ServiceModel.ExceptionDetail))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ClassificationResultCollection))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ClassificationResult))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.CaptureAnnotationCollection))]
@@ -12257,10 +11738,15 @@ namespace KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService {
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PagePropertiesCollection))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PageProperties))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ValidationExecutionContext))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Size))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PointF))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.SizeF))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Color))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(string[]))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(object[][]))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(object[]))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(byte[][]))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.CustomExceptionDetail))]
     public partial class RuntimeTableCell2 : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
@@ -13961,6 +13447,520 @@ namespace KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Size", Namespace="http://schemas.datacontract.org/2004/07/System.Drawing")]
+    [System.SerializableAttribute()]
+    public partial struct Size : System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        private int heightField;
+        
+        private int widthField;
+        
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public int height {
+            get {
+                return this.heightField;
+            }
+            set {
+                if ((this.heightField.Equals(value) != true)) {
+                    this.heightField = value;
+                    this.RaisePropertyChanged("height");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public int width {
+            get {
+                return this.widthField;
+            }
+            set {
+                if ((this.widthField.Equals(value) != true)) {
+                    this.widthField = value;
+                    this.RaisePropertyChanged("width");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="PointF", Namespace="http://schemas.datacontract.org/2004/07/System.Drawing")]
+    [System.SerializableAttribute()]
+    public partial struct PointF : System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        private float xField;
+        
+        private float yField;
+        
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public float x {
+            get {
+                return this.xField;
+            }
+            set {
+                if ((this.xField.Equals(value) != true)) {
+                    this.xField = value;
+                    this.RaisePropertyChanged("x");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public float y {
+            get {
+                return this.yField;
+            }
+            set {
+                if ((this.yField.Equals(value) != true)) {
+                    this.yField = value;
+                    this.RaisePropertyChanged("y");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="SizeF", Namespace="http://schemas.datacontract.org/2004/07/System.Drawing")]
+    [System.SerializableAttribute()]
+    public partial struct SizeF : System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        private float heightField;
+        
+        private float widthField;
+        
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public float height {
+            get {
+                return this.heightField;
+            }
+            set {
+                if ((this.heightField.Equals(value) != true)) {
+                    this.heightField = value;
+                    this.RaisePropertyChanged("height");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public float width {
+            get {
+                return this.widthField;
+            }
+            set {
+                if ((this.widthField.Equals(value) != true)) {
+                    this.widthField = value;
+                    this.RaisePropertyChanged("width");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Color", Namespace="http://schemas.datacontract.org/2004/07/System.Drawing")]
+    [System.SerializableAttribute()]
+    public partial struct Color : System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        private short knownColorField;
+        
+        private string nameField;
+        
+        private short stateField;
+        
+        private long valueField;
+        
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public short knownColor {
+            get {
+                return this.knownColorField;
+            }
+            set {
+                if ((this.knownColorField.Equals(value) != true)) {
+                    this.knownColorField = value;
+                    this.RaisePropertyChanged("knownColor");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public string name {
+            get {
+                return this.nameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.nameField, value) != true)) {
+                    this.nameField = value;
+                    this.RaisePropertyChanged("name");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public short state {
+            get {
+                return this.stateField;
+            }
+            set {
+                if ((this.stateField.Equals(value) != true)) {
+                    this.stateField = value;
+                    this.RaisePropertyChanged("state");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public long value {
+            get {
+                return this.valueField;
+            }
+            set {
+                if ((this.valueField.Equals(value) != true)) {
+                    this.valueField = value;
+                    this.RaisePropertyChanged("value");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="CustomExceptionDetail", Namespace="http://schemas.datacontract.org/2004/07/Agility.Server.Integration.Common.ErrorHa" +
+        "ndling")]
+    [System.SerializableAttribute()]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Point[]))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Point))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.AnnotationLineCapStyle))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.ServiceModel.ExceptionDetail))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ClassificationResultCollection))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ClassificationResult))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.CaptureAnnotationCollection))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.CaptureAnnotation))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.BarcodeCollection))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Barcode))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.RuntimeTableColumnCollection))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.RuntimeTableColumn))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PageRectangleCollection))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PageRectangle))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.TextLineCollection))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.TextLine))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.WordCollection))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Word))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FieldAlternativeCollection))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FieldAlternative))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.RuntimeTableRowCollection))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.RuntimeTableRow))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.RuntimeTableCellCollection))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.RuntimeTableCell))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.RuntimeFieldDataCollection))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.RuntimeFieldData))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.RuntimeField))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.RuntimeTableField))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PageCollection))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Page))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.StringCollection))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Validator))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ValidatorIdentity))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FolderValidator))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FolderStandardValidator))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.DocumentTypeIdentity))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.BusinessRuleFolderValidator))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.BusinessRuleIdentity))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.BusinessRuleValidatorInputCollection))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.BusinessRuleValidatorInput))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.CaptureField))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FieldIdentity))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ValidatorIdentityCollection))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FormatterIdentity))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.VerificationSettings))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.BusinessRuleFormatterInputCollection))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.BusinessRuleFormatterInput))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.LookupItemCollection))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.LookupItem))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.LookupIdentity))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.SimpleField))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.TableField))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.CaptureFieldCollection))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.RegularExpressionValidator))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FieldValidator))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.StandardValidator))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.BusinessRuleFieldValidator))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.DateValidator))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.BusinessRuleDocumentValidator))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.DocumentValidator))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FieldRegularExpressionCollection))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FieldRegularExpression))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.RegularExpression2))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.RegularExpressionIdentity))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ValidationResult))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ReportingData))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.RuntimeFieldIdentityCollection))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.RuntimeFieldIdentity))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.DocumentFieldValueCollection))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.DocumentFieldValue))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FolderFieldValueCollection))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FolderFieldValue))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Folder))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.RuntimeFieldContainer))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.DocumentCollection))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Document))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.DocumentTypeSummary))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ClassificationGroupIdentity))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.VariantIdentity))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FolderCollection))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FolderTypeIdentity))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.RuntimeFieldCollection))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.DeletionResult))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.DocumentImage))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PageIndexCollection))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PageIndex))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.WordUpdateCollection))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.WordUpdate))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.DocumentIdentity))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FieldPropertiesCollection))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FieldProperties))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FieldSystemPropertyCollection))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FieldSystemProperty))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FieldSystemPropertyIdentity))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.DocumentDataInputCollection))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.DocumentDataInput))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PageDataCollection))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PageData))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PageImageDataCollection))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PageImageData))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.DocumentIdentityCollection))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.DocumentDataInput2Collection))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.DocumentDataInput2))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.DocumentSourceFile))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.CategoryIdentity))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.RowIndexCollection))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.RowIndex))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PageData2Collection))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PageData2))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FieldFormatter))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Formatter))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.BusinessRuleFormatter))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.DateFormatter))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.AmountFormatter))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PercentageFormatter))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ResourceIdentity))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FormattingResult))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.BusinessRuleInputCollection))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.BusinessRuleInput))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ReviewValidationResult))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.RuntimeFieldValue))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.RuntimeFieldValueCollection))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ValidationResultCollection))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FuzzyDatabaseIdentity))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.SearchQuery))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FuzzySearchFilterCollection))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FuzzySearch))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.SearchResult))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FuzzyDatabaseFieldMappingCollection))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FuzzyDatabaseFieldMapping))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FuzzyDatabaseField))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FuzzyRecordItemCollection))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FuzzyRecordItem))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.DocumentSortResult))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.DocumentSummaryCollection))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.DocumentSummary))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FieldAlternative2Collection))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FieldAlternative2))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FieldIdentityCollection))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FieldAlternativesCollection))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FieldAlternatives))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FieldAlternatives2Collection))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FieldAlternatives2))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.TableFieldIdentity))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.JobIdentity))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.LockedItemCollection))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.LockedItem))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.LockedItemIdentity))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.SplitDocumentInfoCollection))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.SplitDocumentInfo))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.RejectedPages))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.RuntimeField2Collection))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.RuntimeField2))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FieldSystemProperties))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.RuntimeTableCell2Collection))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.RuntimeTableCell2))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.DocumentSystemProperties))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FieldValidationResult2Collection))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FieldValidationResult2))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.TableCellValidationResultCollection))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.TableCellValidationResult))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ImageSummary))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PageSummary))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FieldPropertiesIdentityCollection))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FieldPropertiesIdentity))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FieldSystemPropertyIdentityCollection))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.AnnotationDataCollection))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.AnnotationData))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.LineAnnotationData))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.AnnotationPen))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.AnnotationLineCap))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.RedactionAnnotationData))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.HighlightAnnotationData))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.FreehandAnnotationData))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.TextAnnotationData))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.AnnotationFont))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.BinaryData))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PagePropertiesIdentityCollection))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PagePropertiesIdentity))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PagePropertiesCollection))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PageProperties))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ValidationExecutionContext))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Size))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PointF))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.SizeF))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Color))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(string[]))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(object[][]))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(object[]))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(byte[][]))]
+    public partial class CustomExceptionDetail : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private object CustomDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.ServiceModel.ExceptionDetail ExceptionDetailField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public object CustomData {
+            get {
+                return this.CustomDataField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CustomDataField, value) != true)) {
+                    this.CustomDataField = value;
+                    this.RaisePropertyChanged("CustomData");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.ServiceModel.ExceptionDetail ExceptionDetail {
+            get {
+                return this.ExceptionDetailField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ExceptionDetailField, value) != true)) {
+                    this.ExceptionDetailField = value;
+                    this.RaisePropertyChanged("ExceptionDetail");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(Namespace="http://www.kofax.com/agility/services/sdk", ConfigurationName="ktaCaptureDocumentService.ICaptureDocumentService")]
     public interface ICaptureDocumentService {
@@ -14226,15 +14226,10 @@ namespace KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService {
         [System.ServiceModel.FaultContractAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.CustomExceptionDetail), Action="http://www.kofax.com/agility/services/sdk/ICaptureDocumentService/SetDocumentFiel" +
             "dStatusCustomExceptionDetailFault", Name="CustomExceptionDetail", Namespace="http://schemas.datacontract.org/2004/07/Agility.Server.Integration.Common.ErrorHa" +
             "ndling")]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(System.ServiceModel.ExceptionDetail))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Point[]))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Point))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Size))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PointF))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.SizeF))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Color))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.CustomExceptionDetail))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.AnnotationLineCapStyle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(System.ServiceModel.ExceptionDetail))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ClassificationResultCollection))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ClassificationResult))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.CaptureAnnotationCollection))]
@@ -14413,10 +14408,15 @@ namespace KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PagePropertiesCollection))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PageProperties))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ValidationExecutionContext))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Size))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PointF))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.SizeF))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Color))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(string[]))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(object[][]))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(object[]))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(byte[][]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.CustomExceptionDetail))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(byte[]))]
         void SetDocumentFieldStatus(string sessionId, KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ReportingData reportingData, string documentId, KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.RuntimeFieldIdentity fieldIdentity, short documentFieldStatus, string message, object fieldValue);
         
@@ -14431,15 +14431,10 @@ namespace KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService {
         [System.ServiceModel.FaultContractAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.CustomExceptionDetail), Action="http://www.kofax.com/agility/services/sdk/ICaptureDocumentService/SetFolderFieldS" +
             "tatusCustomExceptionDetailFault", Name="CustomExceptionDetail", Namespace="http://schemas.datacontract.org/2004/07/Agility.Server.Integration.Common.ErrorHa" +
             "ndling")]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(System.ServiceModel.ExceptionDetail))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Point[]))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Point))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Size))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PointF))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.SizeF))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Color))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.CustomExceptionDetail))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.AnnotationLineCapStyle))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(System.ServiceModel.ExceptionDetail))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ClassificationResultCollection))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ClassificationResult))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.CaptureAnnotationCollection))]
@@ -14618,10 +14613,15 @@ namespace KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService {
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PagePropertiesCollection))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PageProperties))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ValidationExecutionContext))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Size))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.PointF))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.SizeF))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.Color))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(string[]))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(object[][]))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(object[]))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(byte[][]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.CustomExceptionDetail))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(byte[]))]
         void SetFolderFieldStatus(string sessionId, KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.ReportingData reportingData, string folderId, KTA_OPMT_SDK_Helper_Web_Services.ktaCaptureDocumentService.RuntimeFieldIdentity fieldIdentity, short folderFieldStatus, string message, object fieldValue);
         

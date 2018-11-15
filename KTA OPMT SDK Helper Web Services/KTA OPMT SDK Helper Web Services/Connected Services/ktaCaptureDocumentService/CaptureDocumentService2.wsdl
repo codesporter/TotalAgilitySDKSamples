@@ -3,29 +3,11 @@
   <wsp:Policy wsu:Id="BasicHttpBinding_ICaptureDocumentService_policy">
     <wsp:ExactlyOne>
       <wsp:All>
-        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
-          <wsp:Policy>
-            <sp:TransportToken>
-              <wsp:Policy>
-                <sp:HttpsToken RequireClientCertificate="false" />
-              </wsp:Policy>
-            </sp:TransportToken>
-            <sp:AlgorithmSuite>
-              <wsp:Policy>
-                <sp:Basic256 />
-              </wsp:Policy>
-            </sp:AlgorithmSuite>
-            <sp:Layout>
-              <wsp:Policy>
-                <sp:Strict />
-              </wsp:Policy>
-            </sp:Layout>
-          </wsp:Policy>
-        </sp:TransportBinding>
+        <http:NegotiateAuthentication xmlns:http="http://schemas.microsoft.com/ws/06/2004/policy/http" />
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsdl:import namespace="http://www.kofax.com/agility/services/sdk" location="https://kofaxtenant.web.tstest.com/TotalAgility/Services/SDK/CaptureDocumentService.svc?wsdl" />
+  <wsdl:import namespace="http://www.kofax.com/agility/services/sdk" location="http://w2012-ts3.tstest.com/TotalAgility/Services/SDK/CaptureDocumentService.svc?wsdl" />
   <wsdl:types />
   <wsdl:binding name="BasicHttpBinding_ICaptureDocumentService" type="i0:ICaptureDocumentService">
     <wsp:PolicyReference URI="#BasicHttpBinding_ICaptureDocumentService_policy" />

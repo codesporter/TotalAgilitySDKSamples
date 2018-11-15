@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="9d8f6134-51a8-40af-b6af-77988b5e8cd4" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://w2012-ts3.tstest.com/TotalAgility/Services/SDK/JobService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="JobService2.wsdl" MetadataType="Wsdl" ID="46570ce9-de0a-4496-95c1-178dd88223bc" SourceId="1" SourceUrl="http://w2012-ts3.tstest.com/TotalAgility/Services/SDK/JobService.svc?wsdl" />
+    <MetadataFile FileName="JobService6.xsd" MetadataType="Schema" ID="b706e8d1-51de-4324-b042-1dae75e60d76" SourceId="1" SourceUrl="http://w2012-ts3.tstest.com/TotalAgility/Services/SDK/JobService.svc?xsd=xsd3" />
+    <MetadataFile FileName="JobService21.wsdl" MetadataType="Wsdl" ID="fc4a8667-6299-4b82-a66d-ac4183fda677" SourceId="1" SourceUrl="http://w2012-ts3.tstest.com/TotalAgility/Services/SDK/JobService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="JobService61.xsd" MetadataType="Schema" ID="91ee1f7a-9695-445d-aa0f-eef900337b58" SourceId="1" SourceUrl="http://w2012-ts3.tstest.com/TotalAgility/Services/SDK/JobService.svc?xsd=xsd2" />
+    <MetadataFile FileName="JobService1.disco" MetadataType="Disco" ID="36c89113-3938-4908-9fff-cd17f7c1abef" SourceId="1" SourceUrl="http://w2012-ts3.tstest.com/TotalAgility/Services/SDK/JobService.svc?disco" />
+    <MetadataFile FileName="JobService62.xsd" MetadataType="Schema" ID="fc03caa5-d57b-4a32-a51d-7f92424d6a5a" SourceId="1" SourceUrl="http://w2012-ts3.tstest.com/TotalAgility/Services/SDK/JobService.svc?xsd=xsd0" />
+    <MetadataFile FileName="JobService63.xsd" MetadataType="Schema" ID="70b116e1-8bb3-422b-9cc3-b94eccc21cce" SourceId="1" SourceUrl="http://w2012-ts3.tstest.com/TotalAgility/Services/SDK/JobService.svc?xsd=xsd1" />
+    <MetadataFile FileName="JobService64.xsd" MetadataType="Schema" ID="cf9f6a45-f0c1-49be-bf69-69b72a69e0ab" SourceId="1" SourceUrl="http://w2012-ts3.tstest.com/TotalAgility/Services/SDK/JobService.svc?xsd=xsd4" />
+    <MetadataFile FileName="JobService65.xsd" MetadataType="Schema" ID="cbb11374-b81b-425e-9868-be9eec845634" SourceId="1" SourceUrl="http://w2012-ts3.tstest.com/TotalAgility/Services/SDK/JobService.svc?xsd=xsd5" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

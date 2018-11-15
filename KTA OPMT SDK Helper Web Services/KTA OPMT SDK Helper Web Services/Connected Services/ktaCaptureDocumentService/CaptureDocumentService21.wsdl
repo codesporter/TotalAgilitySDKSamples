@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://www.kofax.com/agility/services/sdk" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:i0="http://tempuri.org/" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="CaptureDocumentService" targetNamespace="http://www.kofax.com/agility/services/sdk" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
-  <wsdl:import namespace="http://tempuri.org/" location="https://kofaxtenant.web.tstest.com/TotalAgility/Services/SDK/CaptureDocumentService.svc?wsdl=wsdl0" />
+  <wsdl:import namespace="http://tempuri.org/" location="http://w2012-ts3.tstest.com/TotalAgility/Services/SDK/CaptureDocumentService.svc?wsdl=wsdl0" />
   <wsdl:types>
     <xsd:schema targetNamespace="http://www.kofax.com/agility/services/sdk/Imports">
-      <xsd:import schemaLocation="https://kofaxtenant.web.tstest.com/TotalAgility/Services/SDK/CaptureDocumentService.svc?xsd=xsd1" namespace="http://www.kofax.com/agility/services/sdk" />
-      <xsd:import schemaLocation="https://kofaxtenant.web.tstest.com/TotalAgility/Services/SDK/CaptureDocumentService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Agility.Server.Integration.Common.ErrorHandling" />
-      <xsd:import schemaLocation="https://kofaxtenant.web.tstest.com/TotalAgility/Services/SDK/CaptureDocumentService.svc?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
-      <xsd:import schemaLocation="https://kofaxtenant.web.tstest.com/TotalAgility/Services/SDK/CaptureDocumentService.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-      <xsd:import schemaLocation="https://kofaxtenant.web.tstest.com/TotalAgility/Services/SDK/CaptureDocumentService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System.Drawing" />
-      <xsd:import schemaLocation="https://kofaxtenant.web.tstest.com/TotalAgility/Services/SDK/CaptureDocumentService.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/System.ServiceModel" />
-      <xsd:import schemaLocation="https://kofaxtenant.web.tstest.com/TotalAgility/Services/SDK/CaptureDocumentService.svc?xsd=xsd6" />
-      <xsd:import schemaLocation="https://kofaxtenant.web.tstest.com/TotalAgility/Services/SDK/CaptureDocumentService.svc?xsd=xsd7" namespace="http://schemas.microsoft.com/Message" />
-      <xsd:import schemaLocation="https://kofaxtenant.web.tstest.com/TotalAgility/Services/SDK/CaptureDocumentService.svc?xsd=xsd8" namespace="http://schemas.datacontract.org/2004/07/Agility.Sdk.Model" />
-      <xsd:import schemaLocation="https://kofaxtenant.web.tstest.com/TotalAgility/Services/SDK/CaptureDocumentService.svc?xsd=xsd9" namespace="http://schemas.datacontract.org/2004/07/System.Windows" />
+      <xsd:import schemaLocation="http://w2012-ts3.tstest.com/TotalAgility/Services/SDK/CaptureDocumentService.svc?xsd=xsd1" namespace="http://www.kofax.com/agility/services/sdk" />
+      <xsd:import schemaLocation="http://w2012-ts3.tstest.com/TotalAgility/Services/SDK/CaptureDocumentService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Agility.Server.Integration.Common.ErrorHandling" />
+      <xsd:import schemaLocation="http://w2012-ts3.tstest.com/TotalAgility/Services/SDK/CaptureDocumentService.svc?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://w2012-ts3.tstest.com/TotalAgility/Services/SDK/CaptureDocumentService.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://w2012-ts3.tstest.com/TotalAgility/Services/SDK/CaptureDocumentService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System.Drawing" />
+      <xsd:import schemaLocation="http://w2012-ts3.tstest.com/TotalAgility/Services/SDK/CaptureDocumentService.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/System.ServiceModel" />
+      <xsd:import schemaLocation="http://w2012-ts3.tstest.com/TotalAgility/Services/SDK/CaptureDocumentService.svc?xsd=xsd6" />
+      <xsd:import schemaLocation="http://w2012-ts3.tstest.com/TotalAgility/Services/SDK/CaptureDocumentService.svc?xsd=xsd7" namespace="http://schemas.microsoft.com/Message" />
+      <xsd:import schemaLocation="http://w2012-ts3.tstest.com/TotalAgility/Services/SDK/CaptureDocumentService.svc?xsd=xsd8" namespace="http://schemas.datacontract.org/2004/07/Agility.Sdk.Model" />
+      <xsd:import schemaLocation="http://w2012-ts3.tstest.com/TotalAgility/Services/SDK/CaptureDocumentService.svc?xsd=xsd9" namespace="http://schemas.datacontract.org/2004/07/System.Windows" />
     </xsd:schema>
   </wsdl:types>
   <wsdl:message name="ICaptureDocumentService_TestFieldValidator_InputMessage">
@@ -1699,7 +1699,7 @@
   </wsdl:portType>
   <wsdl:service name="CaptureDocumentService">
     <wsdl:port name="BasicHttpBinding_ICaptureDocumentService" binding="i0:BasicHttpBinding_ICaptureDocumentService">
-      <soap:address location="https://kofaxtenant.web.tstest.com/TotalAgility/Services/SDK/CaptureDocumentService.svc" />
+      <soap:address location="http://w2012-ts3.tstest.com/TotalAgility/Services/SDK/CaptureDocumentService.svc" />
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>
