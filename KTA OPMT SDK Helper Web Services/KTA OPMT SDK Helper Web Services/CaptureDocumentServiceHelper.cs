@@ -27,7 +27,7 @@ namespace ktaCaptureDocumentServiceHelper
 
             ServicePointManager.ServerCertificateValidationCallback = delegate { return true; };
 
-            //Get Source Document
+            //Get root folder
             Folder folder = client.GetFolder(sessionID, new ReportingData(), folderID);
 
             if (folder.Documents.Count < 2)
@@ -37,13 +37,13 @@ namespace ktaCaptureDocumentServiceHelper
 
             StringCollection documents = new StringCollection();
 
-            //For each
+            //For each add to documents collection
             foreach (Document doc in folder.Documents)
             {
                 documents.Add(doc.Id);
             }
 
-            //Merge docs
+            //Merge all documents in documents collection
             client.MergeDocuments(sessionID, documents);
 
             //Close connection
